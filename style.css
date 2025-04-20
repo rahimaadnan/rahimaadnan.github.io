@@ -2,7 +2,17 @@ body {
   margin: 0;
   font-family: Consolas, Monaco, monospace;
   background-color: #f0f0f0;
+  overflow-x: hidden;
+  justify-content: center;
 }
+
+
+
+.centerEverything {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem; /* optional for spacing */
+  }
 
 /* Nav bar code below */
 .nav-bar {
@@ -172,6 +182,10 @@ footer {
   font-size: 14px;
   color: #636363;
   margin-top: 80px;
+
+
   width: 100%;   
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
