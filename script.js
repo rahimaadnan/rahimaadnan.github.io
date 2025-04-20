@@ -36,3 +36,4 @@ function typeWriter(header) {
     typeWriter(header); 
   });
   
+
