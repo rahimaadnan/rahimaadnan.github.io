@@ -1,173 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href="tab icon.jpeg" sizes="96x96" />
-    <link rel="stylesheet" href="style.css">
-    <title>Rahima Adnan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahima Adnan</title>
+  <link rel="icon" type="image/png" href="tab icon.jpeg" />
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+      background-color: #f3f0f8;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      border-right: 2px solid #5c4d7d;
+      white-space: nowrap;
+      animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: #5c4d7d;
+      }
+    }
+
+    header p {
+      font-size: 20px;
+      color: #777;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .header-links {
+      margin-top: 10px;
+    }
+
+    .header-links a {
+      margin: 0 10px;
+      color: #5c4d7d;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #writing {
+      padding-top: 0;
+      margin-top: -40px;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #5c4d7d;
+    }
+
+    .writing-entry {
+      margin-bottom: 30px;
+      padding-left: 20px;
+    }
+
+   
+    .writing-entry li {
+      margin-bottom: 25px;
+    }
+
+    .writing-entry a {
+      color: #5c4d7d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .writing-entry p {
+      margin: 5px 0 0;
+      color: #666;
+    }
+
+    
+    .writing-entry li.no-bullet {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #fffafc;
+      padding: 20px 0;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      color: #333;
+      border-top: 1px solid #ddd;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #5c4d7d;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p,
+      footer p {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- center all the content -->
-    <div class="centerEverything">
-        
-      
-
-    <!-- Navbar section -->
-    <div class="nav-bar">
-        <div class="nav-left">
-            <ul>
-                <li><a href="#about" id="about-link">About</a></li>
-                <li><a href="#writing" id="writing-link">Writing</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
-            </ul>
-        </div>
-
-        <div></div> <!-- adds space between left and right side -->
-
-
-
-
-        <div class="nav-right">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/rahimaadnan/">LinkedIn</a></li>
-                <li><a href="https://rahimaadnan.substack.com/">Substack</a></li>
-                <li><a href="https://x.com/rahimaadnan">X</a></li>
-            </ul>
-        </div>
+  <header>
+    <h2>Rahima Adnan</h2>
+    <p>👋 Hi! I’m Rahima, a software engineer with a passion for early stage startups and venture capital. I write about technology, trends, and startups that excite me. </p>
+    <div class="header-links">
+      <a href="mailto:hello@rahimaadnan.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a href="https://www.linkedin.com/in/rahimaadnan/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+      <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+      <a href="https://x.com/rahimaadnan" target="_blank" rel="noopener noreferrer">X</a>
     </div>
+  </header>
 
+  <section id="about">
+    <h2>Currently</h2>
+    <p>🏦 SWE Equities Quantitative Research @J.P. Morgan</p>
+    <h2>Previously</h2>
+    <p>💳 SWE Intern @ American Express</p>
+    <p>🦄 Venture Fellow @ Halogen Ventures</p>
+    <p>💬 SWE Intern @ TextNow</p>
+    <p>📈 Growth Intern @ Geneva (acquired by Bumble)</p>
+    <p>🏫 Studied Computer Science @ George Mason University</p>
+  </section>
 
-  
+  <section id="writing">
+    <h2>Writing</h2>
+    <ul class="writing-entry">
+      <li>
+        <a href="https://open.substack.com/pub/rahimaadnan/p/standouts-from-y-combinators-summer?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
+          Standouts from Y Combinator’s Summer 2025 Cohort
+        </a>
+        <p>What caught my eye in this season’s batch.</p>
+      </li>
+      <li>
+        <a href="https://open.substack.com/pub/rahimaadnan/p/meet-daydream-your-new-ai-powered?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
+          Meet Daydream, Your New AI Powered Personal Shopper
+        </a>
+        <p>Choice paralysis is real. Daydream wants to be the personal shopper in your pocket.</p>
+      </li>
+      <li>
+        <a href="https://open.substack.com/pub/rahimaadnan/p/2014s-top-funded-startups-where-are-983?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
+          2014's Top Funded Startups: Where Are They Now?
+        </a>
+        <p>The five largest funding rounds of 2014 totaled over $3 billion. A decade later, the question remains: how did these companies fare?</p>
+      </li>
+      <li class="no-bullet">
+        <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">
+          Check out more on Substack!
+        </a>
+      </li>
+    </ul>
+  </section>
 
+  <footer>
+    <p>
+      <a href="mailto:hello@rahimaadnan.com" target="_blank" rel="noopener noreferrer">Email</a> |
+      <a href="https://x.com/rahimaadnan" target="_blank" rel="noopener noreferrer">X</a> |
+      <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a> |
+      <a href="https://www.linkedin.com/in/rahimaadnan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+    <p>© 2025 Rahima Adnan. All rights reserved.</p>
+  </footer>
 
-
-    <!-- About Section -->
-    <section id="about"
-        style="padding: 100px 20px 60px; display: flex; flex-direction: column; align-items: center; text-align: left; max-width: 700px; margin: 0 auto;">
-        <h2 class="typewriter blink-cursor" data-text="Hi, I'm Rahima!"></h2>
-
-
-        <h3>Pronounced like: "Ry-Mah"</h3>
-
-        <div
-            style="margin-top: 10px; background-color:  #E6E6FA; border: 1px solid #ccc; border-radius: 12px; padding: 35px; width: 100%; max-width: 600px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-            <p style="font-size: 16px; line-height: 1.8; color:  #636363;">
-                I am a software engineer with a passion for early stage startups and venture capital. I write about technology, trends, and startups that excite me. 
-                <br><br>
-                I'm currently a Software Engineer at J.P. Morgan, working in Equities Quantitative Research. 
-                <br><br>
-                I was previously at:<br>
-                + SWE Intern @ American Express <br>
-                + Venture Fellow @ Halogen Ventures<br>
-                + SWE Intern @ TextNow<br>
-                + Growth Intern @ Geneva (acquired by Bumble)<br><br>
-                I hold a B.S. in computer science from George Mason University (Go Patriots!). <br><br>
-            </p>
-        </div>
-    </section>
-
-
-
-
-
-
-    <!-- Writing Section -->
-    <section id="writing"
-        style="padding: 80px 20px 60px; display: flex; flex-direction: column; align-items: center; text-align: left; max-width: 700px; margin: 0 auto;">
-        <h2 class="typewriter blink-cursor" data-text="My Writing"></h2>
-
-
-        <div
-            style="margin-top: 18px; background-color: #E6E6FA; border: 1px solid #ccc; border-radius: 12px; padding: 35px; width: 100%; max-width: 600px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-            <p style="font-size: 16px; line-height: 1.6; color: #636363;">
-                I write about technology, trends, and startups that excite me. <br>
-                You can find my writing on
-                <a href="https://rahimaadnan.substack.com/"
-                    style="color: #8B8BAE; text-decoration: none; font-weight: bold;">Substack</a>
-                or
-                <a href="https://www.linkedin.com/newsletters/round-by-round-7279255470941298688/"
-                    style="color: #8B8BAE; text-decoration: none; font-weight: bold;">LinkedIn</a>. <br>
-                Here are three of my pieces!
-            </p>
-        </div>
-
-        <!-- Featured Pieces Cards -->
-        <div
-            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; width: 100%; max-width: 900px; margin-top: 40px;">
-            <!-- Piece 1 -->
-            <div
-                style="background-color:#F8F8FF; border: 1px solid #ccc; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-                <h4>📝 Standouts from Y Combinator’s Summer 2025 Cohort</h4>
-                <p style="font-size: 15px; color: #444; line-height: 1.6;">
-                    The 6 companies that stood out to me, primarily in the AI and developer tools space. 
-                </p>
-                <a href="https://open.substack.com/pub/rahimaadnan/p/standouts-from-y-combinators-summer?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
-                    style="color: #8B8BAE; font-weight: bold; text-decoration: none;">Read the full piece →</a>
-            </div>
-
-            <!-- Piece 2 -->
-            <div
-                style="background-color: #F8F8FF; border: 1px solid #ccc; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-                <h4>📝 Meet Daydream, Your New AI Powered Personal Shopper </h4>
-                <p style="font-size: 15px; color: #444; line-height: 1.6;">
-                    A new AI-powered search and discovery platform for online fashion shopping, described as a trusted personal shopper. 
-                </p>
-                <a href="https://open.substack.com/pub/rahimaadnan/p/meet-daydream-your-new-ai-powered?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
-                    style="color: #8B8BAE; font-weight: bold; text-decoration: none;">Read the full piece →</a>
-            </div>
-
-            <!-- Piece 3 -->
-            <div
-                style="background-color: #F8F8FF; border: 1px solid #ccc; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left;">
-                <h4>📝 2014's Top Funded Startups: Where Are They Now?</h4>
-                <p style="font-size: 15px; color: #444; line-height: 1.6;">
-                    A look into 2014's top-funded startups and how they fared a decade later.
-                </p>
-                <a href="https://open.substack.com/pub/rahimaadnan/p/2014s-top-funded-startups-where-are-983?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
-                    style="color: #8B8BAE; font-weight: bold; text-decoration: none;">Read the full piece →</a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact"
-        style="padding: 100px 20px; display: flex; flex-direction: column; align-items: center; text-align: left; max-width: 700px; margin: 0 auto; width: 100%;">
-
-        <h2 class="typewriter blink-cursor" data-text="Let's Get in Touch"></h2>
-
-        <div
-            style="background-color: #E6E6FA; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); padding: 40px; max-width: 700px; width: 100%;">
-            <p style="font-size: 16px; line-height: 1.6; color: #636363;">📧 hello@rahimaadnan.com</p>
-        </div>
-    </section>
-
-
-
-    <!-- Footer -->
-
-    <footer>
-        <div style="margin-bottom: 12px;">
-            <a href="https://www.linkedin.com/in/rahimaadnan/"
-                style="margin: 0 12px; color: #8B8BAE; text-decoration: none;">LinkedIn</a>
-            <a href="https://rahimaadnan.substack.com/"
-                style="margin: 0 12px; color: #8B8BAE; text-decoration: none;">Substack</a>
-             <a href="https://x.com/rahimaadnan"
-                style="margin: 0 12px; color: #8B8BAE; text-decoration: none;">X</a>
-        </div>
-        <p style="margin: 0; color: #444;">© 2025 Rahima Adnan. All rights reserved.</p>
-    </footer>
-
- </div> <!-- centering all the content div   -->
-
-    <script src="script.js"></script>
-
-</body>
 </body>
 
 </html>
