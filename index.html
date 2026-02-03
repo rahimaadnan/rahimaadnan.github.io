@@ -6,152 +6,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rahima Adnan</title>
   <link rel="icon" type="image/png" href="tab icon.jpeg" />
+
   <style>
     body {
-      font-family: 'Courier New', Courier, monospace;
+      font-family: "Courier New", Courier, monospace;
       margin: 0;
       padding: 0;
-      background-color: #fffafc;
-      color: #333;
+      background-color: #f1f2ee; 
+      color: #1a1a1a; 
+      line-height: 1.65;
     }
 
     header {
       text-align: center;
-      padding: 100px 20px 40px;
-      background-color: #f3f0f8;
+      padding: 90px 20px 50px;
+      background-color: #ecefe9;
+      color: #1a1a1a;
+      border-bottom: 1px solid #c3d2c8;
     }
 
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .typewriter {
-      display: inline-block;
-      overflow: hidden;
-      border-right: 2px solid #5c4d7d;
-      white-space: nowrap;
-      animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
-
-    @keyframes blink-caret {
-      from,
-      to {
-        border-color: transparent;
-      }
-
-      50% {
-        border-color: #5c4d7d;
-      }
+    header h2 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
     header p {
-      font-size: 20px;
-      color: #777;
-      max-width: 600px;
-      margin: 0 auto 20px;
-    }
-
-    .header-links {
-      margin-top: 10px;
+      font-size: 18px;
+      max-width: 560px;
+      margin: 0 auto 24px;
+      color: #2b2b2b;
     }
 
     .header-links a {
-      margin: 0 10px;
-      color: #5c4d7d;
+      margin: 0 12px;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1f5a46; 
+    }
+
+    .header-links a:hover {
+      color: #143d30;
     }
 
     section {
-      padding: 30px 20px;
-      max-width: 800px;
+      padding: 44px 20px;
+      max-width: 780px;
       margin: 0 auto;
-    }
-
-    #writing {
-      padding-top: 0;
-      margin-top: -40px;
-      padding-bottom: 0;
+      border-bottom: 1px solid #c9d7ce;
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #5c4d7d;
+      font-size: 26px;
+      margin-bottom: 18px;
+      color: #1f5a46;
+      font-weight: 600;
     }
 
-    .writing-entry {
-      margin-bottom: 30px;
+    p {
+      margin: 6px 0;
+    }
+
+    ul {
+      margin-top: 10px;
       padding-left: 20px;
     }
 
-   
+    li {
+      margin-bottom: 6px;
+    }
+
+    #writing {
+      border-bottom: none;
+    }
+
+    .writing-entry {
+      list-style: none;
+      padding-left: 0;
+    }
+
     .writing-entry li {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .writing-entry a {
-      color: #5c4d7d;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .writing-entry a:hover {
+      color: #1f5a46;
     }
 
     .writing-entry p {
-      margin: 5px 0 0;
-      color: #666;
+      margin-top: 6px;
+      color: #3a3a3a;
+      max-width: 650px;
     }
 
-    
-    .writing-entry li.no-bullet {
-      list-style: none;
-      margin-left: 0;
-      padding-left: 0;
-      margin-bottom: 0;
+    .no-bullet {
+      margin-top: 10px;
     }
 
     footer {
       width: 100%;
-      background-color: #fffafc;
-      padding: 20px 0;
+      background-color: #ecefe9;
+      padding: 26px 0;
       text-align: center;
-      font-family: 'Courier New', monospace;
-      color: #333;
-      border-top: 1px solid #ddd;
-    }
-
-    footer p {
-      margin: 5px 0;
+      color: #1a1a1a;
+      font-size: 14px;
+      border-top: 1px solid #c3d2c8;
     }
 
     footer a {
-      color: #5c4d7d;
       text-decoration: none;
       margin: 0 8px;
+      color: #1f5a46;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: #143d30;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 36px;
+      header h2 {
+        font-size: 32px;
       }
 
-      header p,
-      footer p {
+      header p {
         font-size: 16px;
       }
 
       h2 {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
   </style>
@@ -161,49 +151,60 @@
 
   <header>
     <h2>Rahima Adnan</h2>
-    <p>👋 Hi! I’m Rahima, a software engineer with a passion for early stage startups and venture capital. I write about technology, trends, and startups that excite me. </p>
+    <p>I write about technology and venture backed companies that excite me.</p>
+
     <div class="header-links">
-      <a href="mailto:hello@rahimaadnan.com" target="_blank" rel="noopener noreferrer">Email</a>
-      <a href="https://www.linkedin.com/in/rahimaadnan/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
-      <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+      <a href="mailto:hello@rahimaadnan.com">Email</a>|
+      <a href="https://www.linkedin.com/in/rahimaadnan/" target="_blank">LinkedIn</a>|
+      <a href="https://rahimaadnan.substack.com/" target="_blank">Substack</a>
     </div>
   </header>
 
   <section id="about">
     <h2>Currently</h2>
-    <p>🏦 SWE Equities Quantitative Research @J.P. Morgan</p>
+    <p>Quantitative Developer @ J.P. Morgan</p>
+
     <h2>Previously</h2>
-    <p>💳 SWE Intern @American Express</p>
-    <p>🦄 Venture Fellow @Halogen Ventures</p>
-    <p>💬 SWE Intern @TextNow</p>
-    <p>📈 Growth Intern @Geneva (acquired by Bumble)</p>
-    <p>🏫 Studied Computer Science @George Mason University</p>
+    <p>J.P. Morgan</p>
+    <ul>
+      <li>SWE – Equities Quantitative Research</li>
+      <li>SWE Intern – Markets Technology (Securitized Products)</li>
+    </ul>
+
+    <p>SWE Intern @ American Express</p>
+    <p>Venture Fellow @ Halogen Ventures</p>
+    <p>SWE Intern @ TextNow</p>
+    <p>Growth Intern @ Geneva (acquired by Bumble)</p>
+    <p>Studied Computer Science @ George Mason University</p>
   </section>
 
   <section id="writing">
     <h2>Writing</h2>
     <ul class="writing-entry">
       <li>
-        <a href="https://open.substack.com/pub/rahimaadnan/p/standouts-from-y-combinators-summer?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
-          Standouts from Y Combinator’s Summer 2025 Cohort
+        <a href="https://open.substack.com/pub/rahimaadnan/p/vcs-bet-on-defense-tech" target="_blank">
+          VCs Bet on Defense Tech
         </a>
-        <p>What caught my eye in this season’s batch.</p>
+        <p>Defense has long been ruled by incumbents like Lockheed Martin and Raytheon, but venture backed startups are starting to break in.</p>
       </li>
+
       <li>
-        <a href="https://open.substack.com/pub/rahimaadnan/p/meet-daydream-your-new-ai-powered?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
-          Meet Daydream, Your New AI Powered Personal Shopper
+        <a href="https://open.substack.com/pub/rahimaadnan/p/meet-daydream-your-new-ai-powered" target="_blank">
+          Meet Daydream, Your New AI-Powered Personal Shopper
         </a>
         <p>Choice paralysis is real. Daydream wants to be the personal shopper in your pocket.</p>
       </li>
+
       <li>
-        <a href="https://open.substack.com/pub/rahimaadnan/p/2014s-top-funded-startups-where-are-983?r=3mebye&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" target="_blank" rel="noopener noreferrer">
-          2014's Top Funded Startups: Where Are They Now?
+        <a href="https://open.substack.com/pub/rahimaadnan/p/yc-fall-2025-cohort-startups-to-watch" target="_blank">
+          YC Fall 2025 Batch Startups to Watch
         </a>
-        <p>The five largest funding rounds of 2014 totaled over $3 billion. A decade later, the question remains: how did these companies fare?</p>
+        <p>Highlights from this season’s YC cohort.</p>
       </li>
+
       <li class="no-bullet">
-        <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">
-          Check out more on Substack!
+        <a href="https://rahimaadnan.substack.com/" target="_blank">
+          Check out more on Substack 
         </a>
       </li>
     </ul>
@@ -211,13 +212,12 @@
 
   <footer>
     <p>
-      <a href="mailto:hello@rahimaadnan.com" target="_blank" rel="noopener noreferrer">Email</a> |
-      <a href="https://rahimaadnan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a> |
-      <a href="https://www.linkedin.com/in/rahimaadnan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hello@rahimaadnan.com">Email</a> |
+      <a href="https://www.linkedin.com/in/rahimaadnan/">LinkedIn</a>|
+      <a href="https://rahimaadnan.substack.com/">Substack</a> 
     </p>
-    <p>© 2025 Rahima Adnan. All rights reserved.</p>
+    <p>© 2026 Rahima Adnan. All rights reserved.</p>
   </footer>
 
 </body>
-
 </html>
